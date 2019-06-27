@@ -60,7 +60,11 @@ textarea{
 }
 
 .headtext2 {
-  font-size: .75em;
+  font-size: 1.5em;
+}
+
+.headtext3 {
+  font-size: .7em;
 }
 
 .contact {
