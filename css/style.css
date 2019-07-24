@@ -26,7 +26,7 @@ div {
 	margin-left: 3px;
 }
 
-input, textarea{
+input{
   border: solid 1px #E5E5E5;
   width: 200px;
   color: #999999;
@@ -36,7 +36,12 @@ input, textarea{
 }
 
 textarea{
-  width: 70%;
+  border: solid 1px #E5E5E5;
+  width: 400px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   height: 150px;
 }
 
@@ -629,8 +634,8 @@ img {vertical-align: middle;}
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
+  /*padding: 8px 12px;*/
+  /*position: absolute;*/
   bottom: 8px;
   width: 100%;
   text-align: center;

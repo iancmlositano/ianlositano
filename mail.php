@@ -57,32 +57,17 @@
 		</nav>
 	</header>
 <div class="contact">
-	<p>You may also contact me through any</p>
-	<p>of my mobile numbers or send me an </p>
-	<p>e-mail at <a href="mailto:imlositano@up.edu.ph">imlositano@up.edu.ph</a> or <a href="mailto:icmlositano@gmail.com">icmlositano@gmail.com</a>.</p>
-	<p>Thank you.</p>
-	<h2>Contact Form</h2>
-	<form target='_blank' action="mail.php" method="POST" class="form">
-		<p class="name">
-			<input type="text" name="name" id="name" placeholder="Aubergine Lozano" />
-			<label for="name">Name</label>
-		</p>
-		<p class="email">
-			<input type="text" name="email" id="email" placeholder="me@aubreylozano.com" />
-			<label for="name">E-mail</label>
-		</p>
-		<p class="web">
-			<input type="text" name="web" id="web" placeholder="www.aubreylozano.com" />
-			<label for="name">Website</label>
-		</p>
-		<br>
-		<p class="text">
-			<textarea name="text" placeholder="Write something to Ian!"></textarea>
-		</p>
-		<p class="submit">
-			<input type="submit" value="Send">
-		</p>
-	</form>
+	<?php $name = $_POST['name'];
+	$email = $_POST['email'];
+	$web = $_POST['web'];
+	$message = $_POST['message'];
+	$formcontent="From: $name \n Message: $message";
+	$recipient = "icmlositano@yahoo.com";
+	$subject = "Contact Form";
+	$mailheader = "From: $email $web \r\n";
+	mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+	echo "Thank You! Your message was delivered.";
+	?>
 </div>
 
 <div class="navbot">
@@ -91,4 +76,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-
