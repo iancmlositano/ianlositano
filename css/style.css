@@ -35,14 +35,10 @@ input{
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 }
 
-textarea{
-  border: solid 1px #E5E5E5;
-  width: 400px;
-  color: #999999;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-  height: 150px;
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .maintitle{
@@ -301,13 +297,35 @@ a:active {
   position: relative;
   top: 130px;
   height: 210px;
-
 }
 
 img.logo2:hover {
   filter: none;
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.05);
+}
+
+img.logo3:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+}
+
+.logo3 {
+  width: 7%;
+  height: auto;
+  padding: 1%;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;  
+}
+
+.logoshr {
+  width: 4.5%;
+  height: auto;
+  float: right;
+  padding: 0.5%;
+  -webkit-transition: all .5s ease-in-out;  
 }
 
 .logo2 {
@@ -324,6 +342,53 @@ img.logo2:hover {
 	float: left;
 	clear: right;
 	top: 130px;
+}
+.newslist  {
+  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.newsimg {
+  width: 70%;
+}
+
+.txtshr {
+  font-weight: 800;
+  float: right;
+  color: #4caf50; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -365,6 +430,26 @@ img.logo2:hover {
   }
   .col-lg-12 {
     width: 100%;
+  }
+  .newstext {
+    margin-left: 60px;
+  }
+  .newstitle  {
+  font-size: 20px;
+  margin-left: 100px;
+  top: 130px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 800;
+  }
+  textarea{
+  border: solid 1px #E5E5E5;
+  width: 400px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  height: 150px;
   }
 }
 
@@ -426,6 +511,26 @@ img.logo2:hover {
   .col-md-12 {
     width: 100%;
   }
+  .newstext {
+    margin-left: 50px;
+  }
+  .newstitle  {
+  font-size: 20px;
+  margin-left: 100px;
+  top: 130px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 800;  
+  }
+  textarea{
+  border: solid 1px #E5E5E5;
+  width: 400px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  height: 150px;
+  }
 }
 
 /********** Small devices only **********/
@@ -468,6 +573,26 @@ img.logo2:hover {
   }
   .col-sm-12 {
     width: 100%;
+  }
+  .newstext {
+    margin-left: 40px;
+  }
+  .newstitle  {
+  font-size: 20px;
+  margin-left: 100px;
+  top: 130px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 800;
+  }
+  textarea{
+  border: solid 1px #E5E5E5;
+  width: 400px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  height: 150px;
   }
 }
 
@@ -512,6 +637,33 @@ img.logo2:hover {
   .col-mo-12 {
     width: 100%;
     clear: all;
+  }
+  .newstitle  {
+  font-size: 20px;
+  text-align: center;
+  top: 130px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 800;
+  }
+  textarea{
+  border: solid 1px #E5E5E5;
+  width: 250px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  height: 150px;
+  }
+  .logoshr {
+  width: 7.5%;
+  height: auto;
+  float: right;
+  padding: 0.5%;
+  -webkit-transition: all .5s ease-in-out;  
+  }
+  .newsimg {
+    width:100%;
   }
 }
 
