@@ -345,7 +345,7 @@ img.logo3:hover {
 }
 .newslist  {
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
   padding-top: 100px;
   margin-bottom: 10px;
 }
@@ -531,6 +531,12 @@ img.logo3:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
   height: 150px;
   }
+  .newslist  {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  }
 }
 
 /********** Small devices only **********/
@@ -578,6 +584,7 @@ img.logo3:hover {
     margin-left: 40px;
   }
   .newstitle  {
+  text-align: center;
   font-size: 20px;
   margin-left: 100px;
   top: 130px;
@@ -664,6 +671,18 @@ img.logo3:hover {
   }
   .newsimg {
     width:100%;
+  }
+  .newslist  {
+  position: relative;
+  clear: both;
+  top: 1000;
+  font-size: 20px;
+  margin-left: 20px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  }
+  .newline {
+  clear: both;
   }
 }
 
